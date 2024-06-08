@@ -8,13 +8,13 @@ import java.nio.file.StandardOpenOption;
 import java.util.concurrent.ConcurrentHashMap;
 
 //Changed variable name to camelCase
-public class fileOutputStrategy implements OutputStrategy {
+public class FileOutputStrategy implements OutputStrategy {
     //Changed variable name to camelCase
     private String baseDirectory;
 
     public final ConcurrentHashMap<String, String> fileMap = new ConcurrentHashMap<>();
 
-    public fileOutputStrategy(String baseDirectory) {
+    public FileOutputStrategy(String baseDirectory) {
         this.baseDirectory = baseDirectory;
     }
 
